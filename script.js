@@ -22707,7 +22707,6 @@ let countries = [
 
 // my script
 
-console.dir(countries);
 let countryArea = document.getElementById("container");
 
 let item = `<div class="container text-center">
@@ -22721,10 +22720,10 @@ function countryCard() {
     item += `<div class="col"> <div class="card" style="width: 18rem">
   <img src="${countryFlag}" class="card-img-top" alt="..." />
   <div class="card-body">
-  <h5 class="card-title">Card title</h5>
+  <h5 class="card-title">${countryName}</h5>
   </div>
   <ul class="list-group list-group-flush">
-  <li class="list-group-item">country name:${countryName}</li>
+  
   <li class="list-group-item">country population:${countryPopulation}</li>
   </ul>
   </div> </div>`;
